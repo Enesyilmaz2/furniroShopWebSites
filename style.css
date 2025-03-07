@@ -1,0 +1,554 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 4835px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* Navbar Section */
+.navbar {
+  width: 100%;
+  height: 94px;
+  display: grid;
+  align-self: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.logo {
+  margin-top: 8%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logoMetin {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.logoResim {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logoResim img {
+  width: 50px;
+  height: 32px;
+  margin-right: 5%;
+}
+
+.sayfalar {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  grid-column: span 2;
+  margin-top: 40px;
+  margin-left: 16%;
+}
+
+.sayfalar a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10%;
+}
+
+.icons {
+  margin-top: 36px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20%;
+}
+
+.icons img {
+  width: 100%;
+  height: auto;
+}
+
+.icons a {
+  text-decoration: none;
+  margin-left: 16%;
+}
+
+/* İlk Tanıtım Section */
+.ilkdiv {
+  width: 100%;
+  height: 812.53px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ilkTanitim {
+  width: 100%;
+  height: 718.53px;
+  max-height: 719px;
+  background-image: url("../img/scandinavian-interior-mockup-wall-decal-background 1.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ilkBilgi {
+  width: 44%;
+  max-width: 643px;
+  height: 443px;
+  background-color: #fff3e3;
+  border-radius: 10px;
+  margin-top: 150px;
+  margin-bottom: 110px;
+  margin-right: 30px;
+  display: grid;
+}
+
+.ilkMiniBaslik {
+  font-family: Poppins, sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 41px;
+  margin-top: 50px;
+}
+
+.ilkBaslik {
+  font-family: Poppins, sans-serif;
+  color: #b88e2f;
+  font-weight: bold;
+  font-size: 52px;
+  margin-left: 41px;
+}
+
+.ilkMetin {
+  font-family: Poppins, sans-serif;
+  color: #333333;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 41px;
+}
+
+.ilkButton {
+  font-family: Poppins, sans-serif;
+  width: 35%;
+  background-color: #b88e2f;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  margin-left: 41px;
+  margin-bottom: 50px;
+}
+
+.ilkButton:hover {
+  cursor: pointer;
+}
+
+/* Kategori Section */
+.kategori {
+  margin-top: 56px;
+  width: 100%;
+  height: 685px;
+  display: grid;
+  grid-template-rows: 10% 10% 80%;
+  place-items: center;
+}
+
+.kategoriBaslik {
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.kategoriMetin {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.kategoriResimler {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 2%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 90% 10%;
+  align-items: center;
+}
+
+.container img {
+  border-radius: 16px;
+  height: 100%;
+}
+
+.container span {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 35%;
+}
+
+/* Ürünler Section */
+.urunler {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5% 90% 5%;
+  grid-template-areas: "urunlerBaslik" "urunlerBilgi" "urunlerTus";
+  width: 100%;
+  height: 1084px;
+  margin-top: 56px;
+}
+
+.urunlerBaslik {
+  display: grid;
+  place-items: center;
+  grid-area: urunlerBaslik;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.urunlerSira {
+  margin-top: 0;
+  grid-area: urunlerBilgi;
+  width: 100%;
+  height: 446px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  gap: 32px;
+}
+
+.urunlerKutu {
+  width: 285px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 301px 145px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "urunResim" "urunBilgi";
+  margin-right: 5%;
+  position: relative;
+}
+
+.urunlerKutuResim {
+  grid-area: urunResim;
+  width: 100%;
+  position: relative;
+}
+
+.urunlerKutuResim img {
+  width: 285px;
+  height: 301px;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e97171;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.new-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #00c853;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.urunKutuBilgi {
+  grid-area: urunBilgi;
+  width: 88%;
+  height: 99px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "urunBaslik urunBaslik" "urunTur urunTur" "urunFiyat urunEski";
+  background-color: #f4f5f7;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 11px;
+  padding-bottom: 21px;
+  position: relative;
+}
+
+.urunlerKutuBaslik {
+  grid-area: urunBaslik;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #3a3a3a;
+}
+
+.urunlerKutuTur {
+  grid-area: urunTur;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #898989;
+}
+
+.urunlerKutuFiyat {
+  grid-area: urunFiyat;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #3a3a3a;
+}
+
+.urunlerKutuEski {
+  display: grid;
+  grid-area: urunEski;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b0b0b0;
+  text-decoration: line-through;
+  margin-left: 25%;
+}
+
+.urunlerButton {
+  margin-top: 0;
+  grid-area: urunlerTus;
+  place-self: center;
+  width: 245px;
+  height: 48px;
+}
+
+.urunlerButton button {
+  width: 100%;
+  height: 100%;
+  color: #b88e2f;
+  border: 1px solid #b88e2f;
+  background-color: #ffffff;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Beautiful Section */
+.beautiful {
+  background-color: #fcf8f3;
+  width: 100%;
+  height: 670px;
+  margin-top: 69px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.beautifulBilgi {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 422px;
+  height: 224px;
+  margin-left: 70px;
+  margin-top: 223px;
+}
+
+.beautifulBilgiBaslik {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.beautifulBilgiMetin {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.beautifulBilgiButton {
+  width: 176px;
+  height: 48px;
+}
+
+.beautifulBilgiButton button {
+  width: 100%;
+  height: 100%;
+  background-color: #b88e2f;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+}
+
+.beautifulResimler {
+  width: 100%;
+  height: 583px;
+  display: grid;
+  margin-top: 44px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.beautifulResimler1 {
+  margin-right: 24px;
+}
+
+.beautifulResimler2 {
+  margin-right: 24px;
+}
+
+.beautifulResimler3 {
+  margin-right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Kisisel Tasarimlar Section */
+.kisiselTasarimlar {
+  margin-top: 67px;
+  width: 100%;
+  height: 780px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 90%;
+}
+
+.kisiselTasarimlarMetin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #616161;
+}
+
+.kisiselTasarimlarBaslik {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #3a3a3a;
+}
+
+.kisiselTasarimlarResim {
+  width: 100%;
+  height: auto;
+}
+
+.kisiselTasarimlarResim img {
+  width: 100%;
+  max-height: 721px;
+}
+
+/* Footer Section */
+.footer {
+  width: 100%;
+  height: 505px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+}
+
+.footerYukari {
+  padding: 0 10%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 30% 20% 20% 30%;
+}
+
+.footerFuniro {
+  margin-bottom: 59px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+
+.footerMetin {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #9f9f9f;
+}
+
+.footerBaslik {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #9f9f9f;
+  margin-bottom: 51px;
+}
+
+.footerLink {
+  margin-bottom: 46px;
+}
+
+.footerLink a {
+  text-decoration: none;
+  color: #000000;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footerKullanici {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.footerKullanici input {
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #9f9f9f;
+}
+
+.footerKullanici button {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+
+.footerAlt {
+  padding: 0 10%;
+}
+
+.footerKullanici button.sonbutton {
+  background-color: #ffffff;
+  border: none;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  padding: 0;
+}
+
+.footerKullanici button.sonbutton span {
+  border-bottom: 1px solid #000000;
+}
